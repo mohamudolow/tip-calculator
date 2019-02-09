@@ -1,3 +1,9 @@
 body {
     background: magenta;
 }
+#container {
+    max-width: 300px;
+    padding-bottom: 30%;
+    margin: 5% auto;
+    background: #e5dfdf;
+}
