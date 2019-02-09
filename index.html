@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    
-    <div id="container">
-    <div class="header">
-        <h1>Tip Calculator</h1>
+    <body>
+
+        <div id="container">
+            <div class="header">
+                <h1>Tip Calculator</h1>
+            </div>
+
+            <div id="main">
+                <div class="box">
+                    <label>Bill</label><br>
+                    <input type="number">
+                </div><br>
+
+                <div class="box">
+                    <label>How was our service?</label><br>
+                    
+                    <select>
+                        <option disabled>Select tip amount</option>
+                        <option>Outstanding</option>
+                        <option>Good</option>
+                        <option>Fair</option>
+                        <option>Terrible</option>
+                    </select>
+                </div><br>
+
+                <div class="tip-box box">
+                    <label>Tip %</label><br>
+                    <div id="tip-amount"></div>
+                </div><br>
+
+                <div class="box">
+                    <label>Number of people</label><br>
+                    <input type="number">
+                </div><br>
+            </div>
+
         </div>
-        
-        
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
