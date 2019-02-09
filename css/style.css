@@ -7,3 +7,8 @@ body {
     margin: 5% auto;
     background: #e5dfdf;
 }
+.header {
+    text-align: center;
+    background: #232323;
+    color: white;
+}
