@@ -1,9 +1,12 @@
 body {
     background: magenta;
     margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 #container {
-    max-width: 300px;
+    max-width: 400px;
     margin: 5% auto;
     background: #e5dfdf;
 }
@@ -12,17 +15,91 @@ body {
     background: #232323;
     color: white;
 }
-.box {
-    padding: 2% 10%;
-}
+
+/* main */
 #main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    padding: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    
 }
+
+
+
+/* input fields column */
+.input-items-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+input {
+    outline: inherit;
+}
+.input {
+   width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 180%;
+}
+.input-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.input-adjustor {
+    background: darkgray;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* outcome column */
+.outcome-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.tip-amount, .total-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+

@@ -17,14 +17,14 @@
             <div id="main">
                 <div class="input-items-box">
                     <div class="box">
-                        <label>Bill</label><br>
-                        <input type="number">
+                        <label>Bill</label>
+                        <input type="number" class="input">
                     </div><br>
 
                     <div class="box">
                         <label>How was our service?</label><br>
 
-                        <select>
+                        <select class="input">
                             <option disabled>Select tip amount</option>
                             <option>Outstanding</option>
                             <option>Good</option>
@@ -33,20 +33,24 @@
                         </select>
                     </div><br>
 
-                    <div class="tip-box box">
+                    <div class="tip-box">
 
                         <div>Tip %</div>
-                        <div>-</div>
-                        <div><input type="number"></div>
-                        <div>+</div>
+                        <div class="input-box">
+                            <div class="input-adjustor">-</div>
+                            <div class="input-field"><input type="number"></div>
+                            <div class="input-adjustor">+</div>
+                        </div>
                     </div><br>
 
                     <div class="num-of-people box">
 
                         <div>Number of people</div>
-                        <div>-</div>
-                        <div><input type="number"></div>
-                        <div>+</div>
+                        <div class="input-box">
+                            <div class="input-adjustor">-</div>
+                            <div class="input-field"><input type="number"></div>
+                            <div class="input-adjustor">+</div>
+                        </div>
                     </div>
                 </div><br>
 
@@ -57,17 +61,17 @@
                             <div>per person</div>
                         </div>
                         <div>
-                        $ <span class="amount-per-person">20.00</span>
+                            $ <span class="amount-per-person">20.00</span>
                         </div>
-                    </div><br>
-                    
+                    </div><br><br><br><br>
+
                     <div class="total-amount">
                         <div>
                             <div>Total</div>
                             <div>per person</div>
                         </div>
                         <div>
-                        $ <span class="total-per-person">120.00</span>
+                            $ <span class="total-per-person">120.00</span>
                         </div>
                     </div>
                 </div>
