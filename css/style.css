@@ -41,6 +41,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+   
 }
 input {
     outline: inherit;
@@ -95,7 +96,7 @@ input {
     -ms-flex-item-align: center;
     align-self: center;
 }
-.tip-amount, .total-amount {
+.tip-amount {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -106,5 +107,41 @@ input {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.total-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.primary-info {
+    font-size: 140%;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.secondary-text {
+    font-weight: 100;
+    font-size: 90%
+}
+.tip-per-person, .total-per-person {
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#tip-amount-per-person {
+    font-size: 110%;
+}
+#total-amount-per-person {
+    font-size: 130%;
 }
 
