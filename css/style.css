@@ -8,6 +8,7 @@ body {
 #container {
     max-width: 400px;
     margin: 5% auto;
+    padding-bottom: 2%;
     background: #e5dfdf;
 }
 .header {
@@ -145,3 +146,20 @@ input {
     font-size: 130%;
 }
 
+/* Payment Section */
+#payment {
+    margin: 5% 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#payment-btn {
+    width: 90%;
+    //margin: 1% auto;
+    padding: 2%;
+    background: #28d028;
+    
+}
